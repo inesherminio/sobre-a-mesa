@@ -1,11 +1,14 @@
 /* Small devices (max-width 480px) */
 
 .navbar {
+  background-color: white;
   box-shadow: 0 0.2rem 0.5rem rgb(0 0 0/8%) !important;
   display: flex;
   font-size: 1rem;
   height: 70px;
   justify-content: space-between;
+  position: fixed;
+  width: 100vw;
 }
 
 .nav-actions {
@@ -28,6 +31,7 @@
 
 .list {
   list-style-type: none;
+  padding: 0;
 }
 
 .list-item {
@@ -71,14 +75,30 @@
   margin-right: 20px;
 }
 
+.logo-icon {
+  width: 30px;
+  position: absolute;
+  left: 50%;
+  margin-left: -15px;
+}
+
 /* Medium devices. The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {
+  .nav-actions {
+    margin-right: 0;
+  }
 }
 
 /* Large devices */
 @media (min-width: 1024px) {
+  .list {
+    padding-inline-start: 40px;
+  }
   .list-item {
     padding: 20px 40px;
+  }
+  .nav-actions {
+    margin-right: 40px;
   }
 }
 

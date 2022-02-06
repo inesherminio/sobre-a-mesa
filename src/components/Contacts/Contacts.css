@@ -1,0 +1,130 @@
+.contacts-section {
+  background-color: #f6e4c0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.info-section {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.chat-icon {
+  margin-right: 10px;
+  width: 60px;
+}
+
+.info {
+  font-size: 0.8rem;
+  line-height: 1.7;
+  margin-top: 20px;
+  text-align: left;
+  width: 60%;
+}
+
+.info span {
+  color: #ad976b;
+}
+
+.contacts {
+  margin-top: 20px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+  width: 100%;
+}
+
+.contact-form h4 {
+  margin: 0 0 10px 0;
+}
+
+.form-input {
+  background-color: #f7e8c9;
+  border: 1px solid white;
+  border-radius: 16px;
+  color: #878277;
+  height: 25px;
+  margin: 5px 0;
+  width: 80%;
+  padding-left: 10px;
+}
+
+.textarea {
+  height: fit-content;
+  padding-top: 10px;
+}
+
+.form-input::placeholder {
+  color: #ad976b;
+  font-family: BAHNSCHRIFT;
+  font-size: 0.8rem;
+  font-weight: lighter;
+}
+
+.select {
+  height: 30px;
+}
+
+.send {
+  font-size: 0.8rem !important;
+  margin: 5px 0;
+}
+
+.form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Medium devices. The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+  .contacts-section {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 40px 0;
+  }
+
+  .form-input {
+    width: 50%;
+  }
+
+  .textarea {
+    width: 80%;
+  }
+
+  .form {
+    align-items: flex-start;
+  }
+
+  .info-section {
+    margin: 20px 40px 0 0;
+  }
+
+  .contact-form h4 {
+    text-align: left;
+    padding-left: 10px;
+  }
+}
+
+/* Large devices */
+@media (min-width: 1024px) {
+  .contact-form {
+    width: 50%;
+  }
+
+  .info {
+    font-size: 1rem;
+  }
+
+  .contact-form h4 {
+    font-size: 1rem;
+  }
+}
+
+/* Extra large devices */
+@media (min-width: 1200px) {
+}

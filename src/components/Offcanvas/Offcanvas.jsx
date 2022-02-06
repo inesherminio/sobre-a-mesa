@@ -16,12 +16,12 @@ function Offcanvas({ setShow }) {
       <div>
         <ul className="offcanvas-list">
           <li className="offcanvas-list-item">
-            <a href="#" onClick={() => setShow(false)}>
+            <a href="#products" onClick={() => setShow(false)}>
               Menu
             </a>
           </li>
           <li className="offcanvas-list-item">
-            <a href="#" onClick={() => setShow(false)}>
+            <a href="#contacts" onClick={() => setShow(false)}>
               Contactos
             </a>
           </li>

@@ -1,0 +1,24 @@
+.footer {
+  align-items: center;
+  display: flex;
+  height: 50px;
+}
+
+.footer p {
+  color: #878277;
+  font-size: 0.6rem;
+  font-weight: lighter;
+  margin: 0;
+  padding-left: 20px;
+}
+
+/* Large devices */
+@media (min-width: 1024px) {
+  .footer {
+    height: 70px;
+  }
+
+  .footer p {
+    font-size: 0.8rem;
+  }
+}

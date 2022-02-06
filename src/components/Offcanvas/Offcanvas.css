@@ -1,7 +1,8 @@
 .offcanvas {
   background-color: #c7b89a;
   height: 100vh;
-  position: absolute;
+  overflow-y: scroll;
+  position: fixed;
   top: 0;
   right: 0;
   width: 50%;

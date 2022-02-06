@@ -1,0 +1,62 @@
+.about-section {
+  background-color: #f4eef4;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.info-about {
+  font-size: 0.8rem;
+  font-weight: lighter;
+  line-height: 1.7;
+  margin: 20px auto;
+  text-align: left;
+  width: 90%;
+}
+
+.info-about span {
+  font-family: pristina;
+  font-size: 1rem;
+}
+
+.about-section h5 {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.about-pic {
+  width: 150px;
+}
+
+.about-pic-section {
+  margin: auto;
+}
+
+/* Medium devices. The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+  .info-about-section {
+    width: 55%;
+  }
+
+  .about-section {
+    padding: 40px;
+  }
+
+  .about-pic {
+    width: 200px;
+  }
+}
+
+/* Large devices */
+@media (min-width: 1024px) {
+  .about-section {
+    padding: 40px 100px;
+  }
+}
+
+/* Extra large devices */
+@media (min-width: 1200px) {
+  .about-section {
+    padding: 40px 200px;
+  }
+}
