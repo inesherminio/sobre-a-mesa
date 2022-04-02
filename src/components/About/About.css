@@ -14,11 +14,6 @@
   width: 90%;
 }
 
-.info-about span {
-  font-family: pristina;
-  font-size: 1rem;
-}
-
 .about-section h5 {
   font-size: 0.9rem;
   margin: 0;
@@ -59,4 +54,10 @@
   .about-section {
     padding: 40px 200px;
   }
+}
+
+.italic {
+  font-style: italic;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif body
+
 }

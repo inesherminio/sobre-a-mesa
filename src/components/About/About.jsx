@@ -8,16 +8,31 @@ function About() {
       <div className="info-about-section">
         <h5>A nossa história</h5>
         <p className="info-about">
-          <span>Sobre-a-mesa</span> surgiu… O Lorem Ipsum é um texto modelo da
-          indústria tipográfica e de impressão. O Lorem Ipsum tem vindo a ser o
-          texto padrão usado por estas indústrias desde o ano de 1500, quando
-          uma misturou os caracteres de um texto para criar um espécime de
-          livro. Este texto não só sobreviveu 5 séculos, mas também o salto para
-          a tipografia electrónica, mantendo-se essencialmente inalterada. Foi
-          popularizada nos anos 60 com a disponibilização das folhas de
-          Letraset, que continham passagens com Lorem Ipsum, e mais recentemente
-          com os programas de publicação como o Aldus PageMaker que incluem
-          versões do Lorem Ipsum.
+          Desde criança que tenho interesse pela culinária. Das primeiras coisas
+          que aprendi, depois de ler e escrever, foi a ler os livros de receitas
+          da minha mãe, e tentar recriar algumas. Umas saiam bem, outras nem
+          tanto. Mas o prazer de experimentar e fazer era maravilhoso! O tempo
+          foi passando, mas a culinária seguiu comigo, pois fui fazendo receitas
+          para familiares e amigos.
+          <br />
+          Até que começaram por dizer que deveria dar a conhecer o que faço a
+          mais pessoas. Nunca levei a sério essas ideias. Tinha outros
+          objetivos, e pouco tempo para tal. Mas a ideia ficou guardada, não
+          esquecida. Até que chegou o momento mais apropriado para realizar este
+          sonho. E assim, com a ajuda e incentivo de familiares e amigos, nasce
+          este pequeno projeto de dar a conhecer um pouco do meu prazer e amor
+          pela culinária.
+          <br />
+          Não sou nenhuma <span className="italic">expert</span>, mas tento fazer tudo com o melhor
+          profissionalismo possível, tendo o máximo cuidado em proporcionar
+          felicidade e alegria às pessoas que degustam as minhas receitas.
+          Assim, quando precisar de uma receita feita com Amor e carinho, o{" "}
+          <span style={{ fontFamily: "pristina", fontSize: "1rem" }}>Sobre-a-mesa</span> satisfaz
+          os seus pedidos.
+          <br />
+          Tudo feito com muito amor e carinho.
+          <br />
+          Isabel
         </p>
       </div>
       <div className="about-pic-section">

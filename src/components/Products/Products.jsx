@@ -6,6 +6,8 @@ import applePie from "../../assets/images/apple_pie.jpg";
 import chocolateCake from "../../assets/images/chocolate_cake.png";
 import cookieCake from "../../assets/images/cookie_cake.jpg";
 import orangePie from "../../assets/images/orange_pie.png";
+import almondPie from "../../assets/images/almond_pie.jpg";
+import lemonMeringuePie from "../../assets/images/lemon_pie.jpg";
 import meatPie from "../../assets/images/meat_pie.jpg";
 import specialOrders from "../../assets/images/special_orders.jpg";
 import EachProduct from "./EachProduct/EachProduct";
@@ -34,6 +36,15 @@ const products = [
   {
     name: "Torta de laranja",
     image: orangePie,
+  },
+  {
+    name: "Tarte de amêndoa",
+    image: almondPie,
+  },
+  {
+    name: "Tarte de limão merengada",
+    image: lemonMeringuePie
+    ,
   },
   {
     name: "Bola de carne",

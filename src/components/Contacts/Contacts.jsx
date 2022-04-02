@@ -2,6 +2,7 @@ import React from "react";
 import "./Contacts.css";
 import chat from "../../assets/images/icon_chat.png";
 import { useState } from "react";
+import emailjs from '@emailjs/browser';
 
 function Contacts() {
   const [form, setForm] = useState({
@@ -20,6 +21,26 @@ function Contacts() {
 
   function handleSubmit(event) {
     event.preventDefault();
+    emailjs
+      .send(
+        "service_u0juif4", 
+        "template_jfam8li",
+        {
+          name: name,
+          email: email,
+          motive: motive,
+          message: message,
+        },
+        "NoT9vFQ1kmkWUaJaf"
+      )
+      .then(
+        function (response) {
+          console.log("SUCCESS!", response.status, response.text);
+        },
+        function (error) {
+          console.log("FAILED...", error);
+        }
+      );
     setShow(true);
     setForm({
       name: "",
@@ -49,31 +70,20 @@ function Contacts() {
           </div>
           <div>
             <strong>Email: </strong>
-            <span>sobreamesa.isabel@gmail.com</span>
+            <span>anisabelas52@gmail.com</span>
           </div>
         </div>
       </div>
       <div className="contact-form">
         <h4>Quero ser contactado</h4>
-        <form
-          action="https://formsubmit.co/inesherminio@gmail.com"
-          method="POST"
-          onSubmit={handleSubmit}
-          className="form"
-        >
-          <input
-            type="hidden"
-            name="_next"
-            value="http://localhost:3000/#contacts"
-          />
-          <input type="hidden" name="_captcha" value="false" />
+        <form onSubmit={handleSubmit} className="form">
           <input
             type="text"
             name="name"
             value={name}
             placeholder="Nome*"
             className="form-input"
-            autocomplete="off"
+            autoComplete="off"
             onChange={handleChange}
             required
           />
@@ -83,7 +93,7 @@ function Contacts() {
             value={email}
             placeholder="Email*"
             className="form-input"
-            autocomplete="off"
+            autoComplete="off"
             onChange={handleChange}
             required
           />
@@ -93,7 +103,7 @@ function Contacts() {
             onChange={handleChange}
             value={motive}
           >
-            <option value="" selected>
+            <option value="" defaultValue>
               Motivo do contacto
             </option>
             <option value="info&budget">Informações e orçamentos</option>
@@ -108,7 +118,7 @@ function Contacts() {
             placeholder="Mensagem*"
             rows="5"
             className="form-input textarea"
-            autocomplete="off"
+            autoComplete="off"
             onChange={handleChange}
             required
           />

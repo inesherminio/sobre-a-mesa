@@ -36,7 +36,6 @@ function Header({ setShow }) {
 
     const winScroll =
       document.body.scrollTop || document.documentElement.scrollTop;
-    console.log(winScroll);
 
     if (winScroll > heightToShowFrom) {
       setIsVisible(true);
@@ -79,20 +78,20 @@ function Header({ setShow }) {
             </a>
           </div>
           <div className="action">
-            <a href="#">
+            <a href="https://www.facebook.com/Sobre-a-mesa-106870621888134" target="_blank" rel="noreferrer">
               <img
                 src={facebook}
                 alt="Facebook icon"
                 className="social-network-icon"
               />
             </a>
-            <a href="#">
+{/*             <a href="#">
               <img
                 src={instagram}
                 alt="Instagram icon"
                 className="social-network-icon"
               />
-            </a>
+            </a> */}
           </div>
         </div>
       )}
