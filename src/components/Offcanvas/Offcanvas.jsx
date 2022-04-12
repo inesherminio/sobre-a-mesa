@@ -1,7 +1,6 @@
 import React from "react";
 import "./Offcanvas.css";
 import facebook from "../../assets/images/facebook.png";
-import instagram from "../../assets/images/instagram.png";
 import CloseIcon from "@mui/icons-material/Close";
 import IconButton from "@mui/material/IconButton";
 
@@ -29,23 +28,25 @@ function Offcanvas({ setShow }) {
       </div>
       <div className="offcanvas-nav-actions">
         <div className="offcanvas-action">
-          <button className="offcanvas-btn">Encomendas</button>
+          <a href="#contacts" onClick={() => setShow(false)}>
+            <button className="offcanvas-btn">Encomendas</button>
+          </a>
         </div>
         <div className="offcanvas-action">
-          <a href="#">
+          <a href="https://www.facebook.com/Sobre-a-mesa-106870621888134" target="_blank" rel="noreferrer">
             <img
               src={facebook}
               alt="Facebook icon"
               className="offcanvas-social-network-icon"
             />
           </a>
-          <a href="#">
+          {/* <a href="#">
             <img
               src={instagram}
               alt="Instagram icon"
               className="offcanvas-social-network-icon"
             />
-          </a>
+          </a> */}
         </div>
       </div>
     </div>

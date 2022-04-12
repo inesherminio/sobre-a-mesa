@@ -23,12 +23,11 @@ function About() {
           este pequeno projeto de dar a conhecer um pouco do meu prazer e amor
           pela culinária.
           <br />
-          Não sou nenhuma <span className="italic">expert</span>, mas tento fazer tudo com o melhor
-          profissionalismo possível, tendo o máximo cuidado em proporcionar
-          felicidade e alegria às pessoas que degustam as minhas receitas.
-          Assim, quando precisar de uma receita feita com Amor e carinho, o{" "}
-          <span style={{ fontFamily: "pristina", fontSize: "1rem" }}>Sobre-a-mesa</span> satisfaz
-          os seus pedidos.
+          Não sou nenhuma <span className="italic">expert</span>, mas tento
+          fazer tudo com o melhor profissionalismo possível, tendo o máximo
+          cuidado em proporcionar felicidade e alegria às pessoas que degustam
+          as minhas receitas. Assim, quando precisar de uma receita feita com
+          Amor e carinho, o Sobre-a-mesa satisfaz os seus pedidos.
           <br />
           Tudo feito com muito amor e carinho.
           <br />
