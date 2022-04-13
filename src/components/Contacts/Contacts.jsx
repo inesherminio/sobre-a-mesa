@@ -23,15 +23,15 @@ function Contacts() {
     event.preventDefault();
     emailjs
       .send(
-        "service_u0juif4", 
-        "template_jfam8li",
+        "service_6np5bem", 
+        "template_mzk3crn",
         {
           name: name,
           email: email,
           motive: motive,
           message: message,
         },
-        "NoT9vFQ1kmkWUaJaf"
+        "n3_HS-zv6ch11iMHW"
       )
       .then(
         function (response) {
